@@ -15,6 +15,15 @@ class Employee extends Model
       'bio',
       'salary',
       'rating',
-      'fired'
+      'fired',
+      'location_id'
     ];
+
+    public function location(){
+      return $this -> belongsTo(Location::class);
+    }
+
+    public function tasks(){
+      return $this -> belongsToMany(Task::class);
+    }
 }
