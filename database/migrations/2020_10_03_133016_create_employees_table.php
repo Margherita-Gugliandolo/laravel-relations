@@ -27,6 +27,8 @@ class CreateEmployeesTable extends Migration
             $table -> integer('rating');
 
             $table -> boolean ('fired') -> default(false);
+
+            $table -> bigInteger('location_id') -> unsigned();
             $table->timestamps();
         });
     }
