@@ -11,9 +11,8 @@ $factory->define(Task::class, function (Faker $faker) {
 
       return [
         'name'   => $faker -> word(),
-        'state'  => $faker -> text(),
-        'city'   => $faker -> date(),
-        'street' => $faker -> date()
+        'start_date'  => $faker -> date(),
+        'end_date'   => $faker -> date(),
       ];
 
 });

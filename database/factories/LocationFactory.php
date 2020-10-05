@@ -9,8 +9,8 @@ use Faker\Generator as Faker;
 $factory->define(Location::class, function (Faker $faker) {
     return [
       'name'   => $faker -> word(),
-      'state'  => $faker -> streetAddress(),
+      'state'  => $faker -> state(),
       'city'   => $faker -> city(),
-      'street' => $faker -> state()
+      'street' => $faker -> streetAddress()
     ];
 });
