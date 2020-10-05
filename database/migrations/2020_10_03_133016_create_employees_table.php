@@ -14,7 +14,7 @@ class CreateEmployeesTable extends Migration
     public function up()
     {
         Schema::create('employees', function (Blueprint $table) {
-            $table->id();
+            $table -> id();
             $table -> string('firstname',64);
             $table -> string('lastname',64);
 
@@ -29,7 +29,7 @@ class CreateEmployeesTable extends Migration
             $table -> boolean ('fired') -> default(false);
 
             $table -> bigInteger('location_id') -> unsigned();
-            $table->timestamps();
+            $table -> timestamps();
         });
     }
 
